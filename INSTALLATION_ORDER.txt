@@ -1,0 +1,26 @@
+BUBU.Market clean installation order
+
+NEW SUPABASE PROJECT
+1. Run FINAL_REBUILD.sql once in the SQL Editor.
+2. Authentication -> Sign In / Providers -> Email: enable Email/password.
+3. Disable Confirm email for the current development build and save.
+4. Authentication -> Users -> Add user:
+   Email: nidhi@bubumarket.com
+   Password: Bubu@2027
+   Auto-confirm: enabled
+5. Run deploy/supabase/seed_admin.sql once.
+6. Copy deploy/supabase-config.example.js to deploy/supabase-config.js.
+7. Enter the new Supabase Project URL and publishable/anon key.
+8. Upload the CONTENTS of deploy/ to the web host.
+
+REUSING AN OLD SUPABASE PROJECT
+1. Empty/delete the media bucket using Supabase Storage.
+2. Run FINAL_RESET.sql once.
+3. Continue with the NEW SUPABASE PROJECT steps above.
+
+DO NOT run FINAL_RESET.sql after the application is in use.
+DO NOT run individual migration files after FINAL_REBUILD.sql.
+
+Development-only universal OTP: 079757
+Default platform password: Bubu@2026
+Nidhi admin password: Bubu@2027
